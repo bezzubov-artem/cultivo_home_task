@@ -13,4 +13,7 @@ export interface IBannerProps {
   isDisplayed?: boolean
 }
 
-export type BannerProps = Partial<IBannerProps & IBannerProps['content']>
+export type BannerProps = Omit<
+  Partial<IBannerProps & IBannerProps['content']>,
+  'content'
+>
