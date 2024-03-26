@@ -1,5 +1,6 @@
 'use client'
 
+import ExpertReportBanner from '@/components/ExpertReportBanner'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -12,7 +13,9 @@ export default function Home() {
         </p>
       </div>
 
-      <div className={styles.placeholder}>banner goes here</div>
+      <div className={styles.placeholder}>
+        <ExpertReportBanner />
+      </div>
     </main>
   )
 }

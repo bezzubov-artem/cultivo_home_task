@@ -1,0 +1,77 @@
+.banner {
+  max-width: 1250px;
+  background-color: #003e49;
+  display: flex;
+  border-radius: 8px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+
+  .background_image_and_header {
+    background-image: url(../../../assets/expert_report_banner_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 0 0 8px;
+
+    min-width: 373px;
+    min-height: 200px;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    line-height: 19.5px;
+  }
+
+  .header {
+    font-size: 24px;
+    line-height: 29.25px;
+  }
+
+  .text {
+    margin: 24px 0 0 24px;
+  }
+
+  .button {
+    background-color: #ffffff;
+    color: #003e49;
+    border-radius: 8px;
+    text-transform: none;
+    max-height: 48px;
+    min-width: 248px;
+    padding: 14px 16px;
+    margin: 24px;
+  }
+
+  .button:hover {
+    background-color: #e1f8fb;
+    transition: background-color 200ms linear;
+  }
+
+  .list {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 960px) {
+  .banner {
+    flex-direction: column;
+    min-width: 300px;
+
+    .background_image_and_header {
+      min-width: 300px;
+      border-radius: 8px 8px 0 0;
+      justify-content: end;
+    }
+
+    .text {
+      margin-right: 24px;
+    }
+
+    .banner_text_content {
+      padding-right: 20px;
+    }
+  }
+}
